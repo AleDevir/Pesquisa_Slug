@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+{% load django_bootstrap5 %}
+<!-- {% static 'icones' as icones_url %} -->
+{% block content %}
+
+
+<div class="d-flex col  justify-content-center p-4 mt-3">
+    <div>
+        <h1 class="text-info">Pesquisa baseada em SLUG</h1>
+        <form class="d-flex" role="search" method="POST">
+            {% csrf_token %}
+            <input class="form-control me-2" type="search" name="palavra" placeholder="Pesquisar palavra"
+                aria-label="Search" value="{{palavra}}">
+            <button class="btn btn-outline-info btn-sm" type="submit"><img src="{% static 'icones/procurar.png' %}"
+                    width="25" height="25"></button>
+
+        </form>
+
+        <div class="mt-5  text-center  border p-4 rounded">
+            <p class=" fs-3 text-info">Dicionário teste</p>
+            {% for uma_palavra in object_list %}
+            <p>
+                {{uma_palavra.palavra}}
+            </p>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
