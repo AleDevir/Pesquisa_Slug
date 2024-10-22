@@ -2,7 +2,7 @@
 <img src="https://freedesignfile.com/image/preview/20158/slug-cartoon-drawing-black-and-white-clipart.png" alt="imagem slug" width="200px"/>
 
 # Repositório Pesquisa_Slug
-Repositório criado para disponibilizar a solução de pesquisa em projeto Django usando db Sqlite.
+Repositório criado para disponibilizar a solução de pesquisa sem diferenciação de letras maiúsculas,  minúsculas e acentuadas em projeto Django usando db Sqlite.
 
 
 Biblioteca necessária:
