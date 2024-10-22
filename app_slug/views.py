@@ -6,7 +6,7 @@ from .models import Palavra
 
 class HomeListView(ListView):
     '''
-    Exibi as Palavras pesquisadas
+    Visualização das palavras
     '''
     model = Palavra
     palavra = ''
