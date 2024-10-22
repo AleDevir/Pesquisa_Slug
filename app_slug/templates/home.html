@@ -10,7 +10,7 @@
         <h1 class="text-info">Pesquisa baseada em SLUG</h1>
         <form class="d-flex" role="search" method="POST">
             {% csrf_token %}
-            <input class="form-control me-2" type="search" name="palavra" placeholder="Pesquisar palavra"
+            <input class="form-control me-2" type="search" name="palavra_pesquisada" placeholder="Pesquisar palavra"
                 aria-label="Search" value="{{palavra}}">
             <button class="btn btn-outline-info btn-sm" type="submit"><img src="{% static 'icones/procurar.png' %}"
                     width="25" height="25"></button>

@@ -5,7 +5,7 @@ from django.template.defaultfilters import slugify
 
 class Palavra(models.Model):
     '''
-    Tabela Palavra
+    Model Palavra
     '''
     palavra = models.CharField('Palavra', max_length=40, unique=True)
     slug = models.SlugField(max_length=40,  editable=False, unique=True)

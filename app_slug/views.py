@@ -13,9 +13,7 @@ class HomeListView(ListView):
     template_name = 'home.html'
 
     def post(self, request, *args, **kwargs):
-        self.palavra = ''
-        if self.request.method == 'POST':
-            self.palavra = self.request.POST['palavra']
+        self.palavra = self.request.POST['palavra_pesquisada']
         
         return render(request, self.template_name, {
             "palavra": self.palavra,

@@ -10,5 +10,4 @@ APP_NAME = "app_slug"
 
 urlpatterns = [
     path("", HomeListView.as_view(), name='home'),
-    # path("<slug:slug>/", PalavraDetailView.as_view(), name="uma-palavra"),
 ]
